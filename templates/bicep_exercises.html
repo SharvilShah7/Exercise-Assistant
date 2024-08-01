@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicep Exercises</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    {% include 'nav_bar.html' %}
+
+    <div class="container1">
+
+        <h1>Bicep Exercises</h1>
+
+        <div class="categories1">
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'double_bicep1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Double Biceps</h2>
+                <p>The double biceps curl is a resistance training exercise primarily targeting the biceps muscles. It
+                    involves holding a dumbbell in each hand, palms facing upwards, and curling the weights towards the
+                    shoulders while keeping the elbows stationary. This movement effectively isolates and strengthens
+                    the biceps, contributing to overall arm development and strength.</p>
+                <a href="/bicep_exercises" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'bicep_curl2.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Single Arm Biceps</h2>
+                <p>The single arm biceps curl is a strength training exercise that targets the biceps muscle. It
+                    involves holding a dumbbell in one hand, palm facing upwards, and curling the weight towards the
+                    shoulder while keeping the elbow stationary. This exercise helps improve biceps strength and
+                    definition, promoting balanced muscle development in the arms.</p>
+                <a href="/bicep_exercises1" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'barbell_curl1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>BarBell Bicep Curl</h2>
+                <p>The barbell biceps curl is a fundamental resistance training exercise for developing the biceps
+                    muscles. It involves holding a barbell with an underhand grip, palms facing upwards, and curling the
+                    bar towards the shoulders while keeping the elbows stationary. This exercise effectively isolates
+                    and strengthens the biceps, contributing to improved arm strength and muscle definition.</p>
+                <a href="/bicep_exercises2" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include 'footer_bar.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', '/static/css/particles.json', function(){
+            console.log('particles.json loaded...');
+        });
+    </script>
+</body>
+
+</html>

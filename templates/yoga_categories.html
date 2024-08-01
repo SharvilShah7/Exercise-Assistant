@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Categories</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <div id="particles-js"></div>
+
+    {% include 'nav_bar.html' %}
+
+    <div class="container1">
+        <h1>Yoga Categories</h1>
+        <div class="categories1">
+
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'bridge_pose.jpg') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 1">
+                <h2>Bridge Pose</h2>
+                <p>The Bridge Pose is a backbend that targets the spine, chest, and hip flexors. It also strengthens the
+                    back muscles and improves posture.</p>
+                <a href="/bridge_yoga" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'downward_dog_pose.jpg') }}"
+                    style="width: 15rem; height: 10rem;" alt="Category 2">
+                <h2>Downward Dog Pose</h2>
+                <p>The Downward Dog Pose is a fundamental yoga pose that stretches the entire body, strengthens the arms
+                    and legs, and improves circulation.</p>
+                <a href="/downwarddog_yoga" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'cobra_pose.jpg') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Cobra Pose</h2>
+                <p>The Cobra Pose stretches the chest, shoulders, and abdomen while strengthening the spine. It also
+                    helps improve flexibility and posture.</p>
+                <a href="/cobra_yoga" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'triangle_pose.jpg') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Triangle Pose</h2>
+                <p>The Triangle Pose stretches the hips, hamstrings, and calves while improving balance and stability.
+                    It also stimulates digestion and relieves stress.</p>
+                <a href="/triangle_yoga" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    {% include 'footer_bar.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'static/css/particles.json', function(){
+            console.log('particles.json loaded...');
+        });
+    </script>
+
+    <!-- JavaScript to hide loader when content is loaded -->
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+            const content = document.getElementById('content');
+            content.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

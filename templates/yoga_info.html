@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Information</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader"></div>
+  <!-- Include t
+
+  <div id="particles-js"></dhe navigation bar -->
+  {% include 'nav_bar.html' %}
+
+  <h1>Yoga Information</h1>
+  <!-- Add yoga information content and pictures -->
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="editing" data-aos="fade-right">
+        <div class="row gx-0">
+          <div class="col-lg-5 d-flex align-items-center">
+            <img src="static\yoga1.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+            <div class="content">
+              <ul style="text-align: justify; padding: 20px;">
+                <li>Yoga is for everybody, regardless of age, gender, or fitness level.</li>
+                <li>It's a holistic practice that nurtures the body, mind, and spirit.</li>
+                <li>With its adaptable nature, yoga offers modifications and variations for individuals of all
+                  abilities, making it accessible to everyone.</li>
+                <li>Whether you're seeking strength, flexibility, stress relief, or inner peace, there's a style of yoga
+                  suited to your needs.</li>
+                <li>From gentle Hatha to dynamic Vinyasa, the beauty of yoga lies in its inclusivity and ability to meet
+                  practitioners wherever they are on their journey to wellness.</li>
+                <li>Embrace the transformative power of yoga and discover the profound benefits it can bring to your
+                  life.</li>
+                <li>Yoga fosters a sense of community and connection, offering opportunities for social interaction and
+                  support.</li>
+                <li>Practicing yoga promotes mindfulness and self-awareness, enhancing mental clarity and emotional
+                  well-being.</li>
+                <li>Regular yoga practice can improve balance, coordination, and overall physical health, reducing the
+                  risk of injury and enhancing quality of life.</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+  <br>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="editing" data-aos="fade-left">
+        <div class="row gx-0">
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center">
+            <div class="content">
+              <h1>Advantages of Yoga</h1>
+
+              <ul style="text-align: justify; padding: 20px;">
+                <li>Enhances flexibility, strength, and balance through various poses and movements.</li>
+                <li>Promotes overall physical wellness.</li>
+                <li>Cultivates relaxation and reduces stress.</li>
+                <li>Incorporates deep breathing techniques and mindfulness practices.</li>
+                <li>Improves mental clarity and emotional well-being.</li>
+                <li>Aids in managing chronic conditions such as hypertension, arthritis, and insomnia.</li>
+                <li>Contributes to better health outcomes.</li>
+                <li>Promotes better posture, spinal health, and circulation.</li>
+                <li>Contributes to a more vibrant and energized lifestyle.</li>
+                <li>Unlocks a pathway to holistic wellness.</li>
+                <li>Enriches every aspect of life.</li>
+                <li>Fosters a deeper connection between mind and body.</li>
+                <li>Promotes self-awareness and inner harmony.</li>
+                <li>Encourages mindfulness and present-moment awareness.</li>
+                <li>Helps cultivate a sense of peace and tranquility.</li>
+                <li>Improves sleep quality.</li>
+                <li>Enhances overall relaxation.</li>
+                <li>Leads to a greater sense of well-being and vitality.</li>
+                <li>Provides a supportive environment for personal growth and self-discovery.</li>
+                <li>Fosters a sense of belonging and connection with others.</li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="static/Yoga_gif.gif" width="500px" height="600px" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <div class="text-center my-3">
+    <a class="btn btn-outline-secondary" href="/yoga_do">Ready for Yoga</a>
+  </div>
+
+  {% include 'footer_bar.html' %}
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'static/css/particles.json', function () {
+      console.log('particles.json loaded...');
+    });
+  </script>
+
+  <!-- JavaScript to hide loader when content is loaded -->
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.getElementById('loader');
+      loader.style.display = 'none';
+      const content = document.getElementById('content');
+      content.style.display = 'block';
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+    });
+  </script>
+
+</body>
+
+</html>

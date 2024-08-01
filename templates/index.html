@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader"></div>
+
+  <div id="particles-js"></div>
+
+  {% include 'nav_bar.html' %}
+
+  <section id="about">
+    <div class="container">
+      <div class="editing">
+        <div class="row">
+          <div class="col-lg-6"></div>
+          <div class="container-fluid px-4 py-5 my-5 text-center">
+            <div class="lc-block">
+              <h2 class="fw-bold display-1">Exercise Assistant</h2>
+            </div>
+            <div class="lc-block">
+              <h2 class="display-3">Your AI-Powered Exercise Analyzer</h2>
+            </div>
+            <div class="lc-block col-lg-9 mx-auto mb-4">
+              <p class="lead ">Empower your fitness journey with Exercise Assistant: Your personalized guide to
+                achieving
+                your health and wellness goals, one workout at a time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+
+  <section>
+    <div class="container-fluid ">
+      <div class="row">
+
+        <a href="/yoga_do" style="text-decoration: none;">
+          <div class="col-lg-6 col-sm-6 d-flex justify-content-center">
+            <div class="card p-3 m-2  rounded-4 text-center">
+              <img src="static\pose_detector.jpg" class="card-img-top rounded-3 alt=" ...">
+              <div class="card-body">
+                <h3 class="card-title">Yoga</h3>
+                <a href="/yoga_do" class="btn btn-outline-secondary">Explore</a>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <div class="col-lg-6 col-sm-6 d-flex justify-content-center">
+          <a href="/workout" style="text-decoration: none;">
+            <div class="card p-3 m-2  rounded-4 text-center">
+              <img src="static/Fitness-Apps-with-AI-pose-estimation.jpg" class="card-img-top rounded-3 alt=" ...">
+              <div class="card-body">
+                <h3 class="card-title">Workout</h3>
+                <a href="/workout" class="btn btn-outline-secondary">Explore</a>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section><br>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="editing" data-aos="fade-left">
+        <div class="row gx-0 my-3">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="content">
+              <h3>Who We Are</h3>
+              <h2>Exercise Assistant: Transform Your Fitness Journey Today</h2>
+              <p style="text-align: justify; padding: 15px;">
+                At Exercise Assistant, discover meticulously crafted workout routines tailored to your fitness level and
+                goals. From strength training to yoga flows, our diverse range of exercises ensures a dynamic and
+                effective approach to achieving your desired results. Whether you're a beginner or an experienced
+                athlete,
+                our diverse range of exercises ensures
+                that there's something for everyone. From strength training to yoga flows, we offer a comprehensive
+                selection of workouts to keep you engaged and motivated. At Exercise Assistant, we're committed to
+                providing you with the support and guidance you need to succeed
+                on your fitness journey. Join us today and let us help you unlock your true potential, one workout at a
+                time. Let us guide you on your journey to a healthier,
+                stronger you.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="static/push_up1.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+  <br>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="editing" data-aos="fade-right">
+        <div class="row gx-0 my-3">
+          <div class="col-lg-6 d-flex align-items-center">
+            <img src="static\yoga.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="content">
+              <h2>Discover Peace Through Yoga Practice</h2>
+              <p style="text-align: justify; padding: 15px;">
+                At Exercise Assistant, we specialize in providing a serene haven for yoga enthusiasts of all levels.
+                Whether you're a beginner looking to find your balance or an experienced yogi seeking to deepen your
+                practice, our platform offers a diverse range of expert-led yoga practices to suit your needs."
+                Our team of experienced instructors is dedicated to guiding you through a transformative yoga
+                experience,
+                helping you enhance flexibility, cultivate mindfulness, and discover inner peace.
+                From gentle flows to challenging poses, our curated collection of yoga practices is designed to
+                harmonize
+                your body and soul, leaving you feeling rejuvenated and centered after every session.
+                Join us at Exercise Assistant and embark on a journey of self-discovery through the ancient practice of
+                yoga. Let us be your trusted companion as you explore the path to physical, mental, and spiritual
+                well-being.
+                Experience the transformative power of yoga with Exercise Assistant.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+  <br>
+
+
+  <div class="editing">
+    <h1 style="text-align: center;">Success Stories</h1>
+    <!-- Carousel wrapper -->
+    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+      <!-- Inner -->
+      <div class="carousel-inner py-4">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Anna Deynah</h5>                
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Exercise Assistant has transformed my fitness routine! The personalized workouts and real-time
+                  feedback have helped me push my limits and achieve my goals faster than ever before.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+                <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                  <li><i class="fas fa-star fa-sm"></i></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+                  style="width: 150px;" />
+                <h5 class="mb-3">John Doe</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  I was skeptical at first, but Exercise Assistant exceeded my expectations. The AI Pose Estimation
+                  technology is incredibly accurate, providing precise guidance during every exercise.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>          
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar"
+                  style="width: 150px;" />
+                <h5 class="mb-3">Maria Kate</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  I've tried many fitness apps, but none compare to Exercise Assistant. The variety of workout routines
+                  and the user-friendly interface make it my go-to app for staying in shape.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">John Wick</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Exercise Assistant has been a game-changer for me. As someone with a busy schedule, the flexibility of
+                  being able to work out from home while still receiving expert guidance is invaluable.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Alex Rey</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  I've struggled with maintaining proper form during workouts, but Exercise Assistant has been a
+                  lifesaver. The real-time feedback ensures I stay safe and get the most out of every session.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Maria Kaif</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Thanks to Exercise Assistant, I've finally found a fitness routine that I enjoy and can stick to. The
+                  personalized approach keeps me motivated, and I've seen noticeable improvements in my strength and
+                  flexibility.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Anna Yadav</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Exercise Assistant isn't just another fitness app – it's a complete wellness solution. From yoga flows
+                  to strength training, it caters to all my fitness needs and helps me lead a healthier lifestyle.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">John Khan</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  I'm amazed by the level of detail Exercise Assistant provides in each workout. The exercise library is
+                  extensive, and the progress tracking feature keeps me accountable and motivated.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+
+              <div class="col-lg-4 d-none d-lg-block">
+                <img class="rounded-circle shadow-1-strong mb-4"
+                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar" style="width: 150px;" />
+                <h5 class="mb-3">Maria Kapoor</h5>
+                <p class="text-muted">
+                  <i class="fas fa-quote-left pe-2"></i>
+                  Exercise Assistant has helped me take my fitness journey to the next level. Whether I'm a beginner or
+                  a seasoned athlete, the app adapts to my needs and pushes me to reach new heights.
+                  <i class="fas fa-quote-right pe-2"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+      <!-- Controls -->
+      <div class="d-flex justify-content-center mb-4">
+        <button class="carousel-control-prev position-relative" type="button"
+          data-bs-target="#carouselMultiItemExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-relative" type="button"
+          data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel wrapper -->
+  </div>
+
+
+  <br>
+  <section id="FAQ">
+    <div class="container">
+      <div class="editing">
+        <div class="row">
+          <div class="col-lg-6"></div>
+          <div class="container-fluid px-4 py-3 my-5 text-center">
+            <div class="lc-block">
+              <h2 class="fw-bold display-5">FitFacts: Your Essential Guide to Exercise Assistant</h2>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="mb-5">
+          <div class="accordion w-100" id="basicAccordion">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#basicAccordionCollapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  How does Exercise Assistant provide personalized workout routines?
+                </button>
+              </h2>
+              <div id="basicAccordionCollapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#basicAccordion">
+                <div class="accordion-body" style="text-align: justify; padding: 15px;">
+                  Exercise Assistant uses advanced algorithms and user input to tailor workout routines based on
+                  individual fitness levels, goals, and preferences. By analyzing user data and providing real-time
+                  feedback,
+                  Exercise Assistant ensures that each workout is personalized to optimize results and enhance the user
+                  experience.
+                </div>
+              </div>
+            </div><br>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#basicAccordionCollapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Can I track my progress and achievements with Exercise Assistant?
+                </button>
+              </h2>
+              <div id="basicAccordionCollapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#basicAccordion">
+                <div class="accordion-body" style="text-align: justify; padding: 15px;">
+                  Yes, Exercise Assistant includes comprehensive progress tracking features that allow users to
+                  monitor their fitness journey over time. Users can track metrics such as workout duration, intensity,
+                  and
+                  consistency, as well as view achievements and milestones reached. This data helps users stay motivated
+                  and
+                  informed about their progress towards their fitness goals.
+                </div>
+              </div>
+            </div><br>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#basicAccordionCollapseThree" aria-expanded="false" aria-controls="collapseOne">
+                  What makes Exercise Assistant's real-time feedback feature unique?
+                </button>
+              </h2>
+              <div id="basicAccordionCollapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#basicAccordion">
+                <div class="accordion-body" style="text-align: justify; padding: 15px;">
+                  Exercise Assistant's real-time feedback feature utilizes AI-powered pose estimation technology to
+                  analyze users' movements during workouts. This allows Exercise Assistant to provide instant feedback
+                  on
+                  form and
+                  technique, helping users maintain proper posture and reduce the risk of injury. The real-time feedback
+                  feature
+                  sets Exercise Assistant apart by providing personalized guidance and support during every workout
+                  session.
+                </div>
+              </div>
+            </div><br>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#basicAccordionCollapseFour" aria-expanded="false" aria-controls="collapseOne">
+                  How does Exercise Assistant ensure accurate form analysis during workouts?
+                </button>
+              </h2>
+              <div id="basicAccordionCollapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#basicAccordion">
+                <div class="accordion-body" style="text-align: justify; padding: 15px;">
+                  Exercise Assistant employs state-of-the-art AI algorithms to accurately analyze users' form and
+                  technique during workouts. By leveraging pose estimation technology and machine learning models,
+                  Exercise
+                  Assistant can detect subtle movements and deviations from proper form in real-time. This ensures that
+                  users
+                  receive accurate feedback and guidance to optimize their workout performance and minimize the risk of
+                  injury.
+                </div>
+              </div>
+            </div><br>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#basicAccordionCollapseFive" aria-expanded="false" aria-controls="collapseOne">
+                  Is Exercise Assistant suitable for beginners and experienced fitness enthusiasts alike?
+                </button>
+              </h2>
+              <div id="basicAccordionCollapseFive" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#basicAccordion">
+                <div class="accordion-body" style="text-align: justify; padding: 15px;">
+                  Yes, Exercise Assistant is designed to cater to individuals of all fitness levels, from beginners
+                  to experienced athletes. The platform offers a wide range of exercises and workout routines that can
+                  be
+                  customized to suit individual needs and abilities. Whether you're just starting your fitness journey
+                  or
+                  looking
+                  to take your workouts to the next level, Exercise Assistant provides the support and guidance you need
+                  to
+                  achieve your goals.
+                </div>
+              </div>
+            </div><br>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#basicAccordionCollapseSix" aria-expanded="false" aria-controls="collapseOne">
+                  How can I access additional support and resources through Exercise Assistant?
+                </button>
+              </h2>
+              <div id="basicAccordionCollapseSix" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#basicAccordion">
+                <div class="accordion-body" style="text-align: justify; padding: 15px;">
+                  Exercise Assistant offers various support channels and resources to help users make the most of
+                  their fitness experience. This includes access to tutorials, articles, and expert tips on exercise
+                  techniques,
+                  nutrition, and wellness. Additionally, users can reach out to the Exercise Assistant support team for
+                  assistance
+                  with any questions or issues they may encounter while using the platform.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  {% include 'footer_bar.html' %}
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'static/css/particles.json', function () {
+      console.log('particles.json loaded...');
+    });
+  </script>
+
+  <!-- JavaScript to hide loader when content is loaded -->
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.getElementById('loader');
+      loader.style.display = 'none';
+      const content = document.getElementById('content');
+      content.style.display = 'block';
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+    });
+  </script>
+
+  <!-- Bootstrap Bundle (JS and Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

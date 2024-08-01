@@ -1,0 +1,55 @@
+<!-- exercise_count for Seated Row exercise -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exercise Count</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader"></div>
+
+    <div id="particles-js"></div>
+    {% include 'nav_bar.html' %}
+
+    <div class="categories1">
+        <div class="category1">
+            <h1>Seated Row Exercise</h1>
+            <img src="{{url_for('static', filename = 'seated_row1.gif') }}" style="width: 15rem; height: 12rem;"
+                alt="Category 1">
+            <h2>Exercise Count: {{ counter }}</h2>
+            <a href="/workout/back" class="category-link">
+                <div class="btn btn-outline-secondary" style="padding: 15px; padding-left: 20px; padding-right: 20px;">
+                    <h3 style="font-size: x-large;">Back</h3>
+                </div>
+            </a>
+            <a href="/back_exercises3" class="category-link">
+                <div class="btn btn-outline-secondary" style="padding: 15px; padding-left: 20px; padding-right: 20px;">
+                    <h3 style="font-size: x-large;">Repeat</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+    {% include 'footer_bar.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', 'static/css/particles.json', function () {
+            console.log('particles.json loaded...');
+        });
+    </script>
+
+    <!-- JavaScript to hide loader when content is loaded -->
+    <script>
+        window.addEventListener('load', function () {
+            const loader = document.getElementById('loader');
+            loader.style.display = 'none';
+            const content = document.getElementById('content');
+            content.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

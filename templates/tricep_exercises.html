@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricep Exercises</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    {% include 'nav_bar.html' %}
+
+    <div class="container1">
+
+        <h1>Tricep Exercises</h1>
+
+        <div class="categories1">
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'cable_push1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Triceps (Cable Push Down)</h2>
+                <p>The triceps cable push-down is an isolation exercise that primarily targets the triceps muscles. It
+                    involves using a cable machine with a straight or angled bar attachment, gripping the bar with an
+                    overhand grip, and pushing it downward until the arms are fully extended, focusing on contracting
+                    the triceps. This exercise helps to strengthen and define the triceps, promoting arm stability and
+                    improving overall upper body strength.</p>
+                <a href="/tricep_exercises" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'tricep1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Standing Overhead Dumbbell Extension</h2>
+                <p>The Standing Overhead Dumbbell Extension is an isolation exercise that targets the triceps muscles.
+                    It involves standing with a dumbbell held overhead, elbow bent and close to the head, and then
+                    straightening the arm to lift the weight directly upward. This exercise effectively works the
+                    triceps, aiding in muscle strength and definition, particularly in the long head of the triceps.</p><br>
+                <a href="/tricep_exercises1" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'arm_kickback.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Arm Kickback</h2>
+                <p>The Arm Kickback exercise is an isolation movement primarily targeting the triceps muscles. It
+                    involves bending at the waist, holding a dumbbell in one hand, and extending the arm straight back
+                    behind the body while keeping the elbow stationary. This action contracts the triceps, promoting
+                    strength and definition in the back of the upper arm. It's a unilateral exercise, meaning it works
+                    one arm at a time.</p><br>
+                <a href="/tricep_exercises2" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'bench_dip.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Bench Dips</h2>
+                <p>The bench dip is a bodyweight exercise that primarily targets the triceps, chest, and shoulders. It
+                    involves sitting on the edge of a bench with hands placed on the bench behind the body, fingers
+                    facing forward, and legs extended out in front. By lowering the body towards the ground and then
+                    pushing back up, the triceps are engaged to lift the body weight. Bench dips are an effective way to
+                    strengthen and tone the triceps muscles without the need for additional equipment, contributing to
+                    overall upper body strength and definition.</p>
+                <a href="/tricep_exercises3" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include 'footer_bar.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', '/static/css/particles.json', function(){
+            console.log('particles.json loaded...');
+        });
+    </script>
+</body>
+
+</html>

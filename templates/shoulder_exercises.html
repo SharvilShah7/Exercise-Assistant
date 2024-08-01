@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoulder Exercises</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    {% include 'nav_bar.html' %}
+
+    <div class="container1">
+
+        <h1>Shoulder Exercises</h1>
+
+        <div class="categories1">
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'shoulder_count1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Double Dumbbell Shoulder Press</h2>
+                <p>The double dumbbell shoulder press is a compound resistance exercise that targets the deltoid muscles
+                    of the shoulders, as well as engaging the triceps and upper chest. It involves holding a dumbbell in
+                    each hand at shoulder height and pushing them upwards until the arms are fully extended overhead,
+                    then lowering the weights back to the starting position. This exercise helps improve shoulder
+                    strength, stability, and muscle definition, contributing to overall upper body.</p>
+                <a href="/shoulder_exercises" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'lateral_rise1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Shoulder Lateral Raise</h2>
+                <p>The shoulder lateral raise is an isolation exercise primarily targeting the deltoid muscles of the
+                    shoulders. It involves holding dumbbells at the sides with palms facing the body and lifting the
+                    arms outward to the sides until they are parallel to the ground, then lowering them back down. This
+                    exercise helps strengthen and define the shoulders, particularly the lateral deltoid head, improving
+                    shoulder stability and enhancing upper body aesthetics.</p><br>
+                <a href="/shoulder_exercises1" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'upright_row1.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Shoulder Upright Rows</h2>
+                <p>The shoulder upright row is a compound exercise primarily targeting the deltoid muscles of the
+                    shoulders, along with the trapezius and upper back muscles. It involves holding a barbell or
+                    dumbbells with an overhand grip, hands positioned slightly closer than shoulder-width apart, and
+                    lifting the weight upwards towards the chin while keeping the elbows higher than the forearms. This
+                    exercise helps to improve shoulder and upper back strength.</p>
+                <a href="/shoulder_exercises2" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="category1">
+                <img src="{{url_for('static', filename = 'alternate_front.gif') }}" style="width: 15rem; height: 10rem;"
+                    alt="Category 3">
+                <h2>Alternate Front Raises</h2>
+                <p>The alternate front raise is an isolation exercise that primarily targets the anterior deltoid
+                    muscles of the shoulders. It involves holding dumbbells in each hand, palms facing towards the body,
+                    and lifting one arm at a time straight forward until it reaches shoulder height, while keeping the
+                    other arm stationary. This exercise helps to strengthen and define the front portion of the
+                    shoulders, improving shoulder stability and enhancing overall upper body aesthetics.</p>
+                <a href="/shoulder_exercises3" class="category-link">
+                    <div class="btn btn-outline-secondary btn-lg" style="padding: 20px;padding-left: 30px;padding-right: 30px;">
+                        <h2>Go</h2>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include 'footer_bar.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        particlesJS.load('particles-js', '/static/css/particles.json', function(){
+            console.log('particles.json loaded...');
+        });
+    </script>
+</body>
+
+</html>

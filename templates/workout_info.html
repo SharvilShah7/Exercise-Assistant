@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Information</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loader"></div>
+
+  <div id="particles-js"></div>
+  <!-- Include the navigation bar -->
+  {% include 'nav_bar.html' %}
+
+  <h1>Workout Information</h1>
+  <!-- Add workout information content and pictures -->
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="editing" data-aos="fade-right">
+        <div class="row gx-0">
+          <div class="col-lg-4 d-flex align-items-center">
+            <img src="static/workoutinfo1.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-8 d-flex flex-column justify-content-center">
+            <div class="content">
+              <ul style="text-align: justify; padding: 25px;">
+                <li>Gym workouts are for everyone, regardless of age, gender, or current fitness level.</li>
+                <li>They offer a comprehensive approach to physical health, encompassing strength training,
+                  cardiovascular exercise,
+                  flexibility work, and more.</li>
+                <li>With their customizable routines, gym workouts cater to individuals of all
+                  abilities, ensuring accessibility for everyone.</li>
+                <li>Whether you're aiming to build muscle, improve endurance,
+                  manage weight, or enhance overall well-being, there's a workout regimen tailored to your goals.</li>
+                <li>From beginner-friendly circuit training to high-intensity interval sessions, the versatility of gym
+                  workouts
+                  empowers individuals to embark on their fitness journey with confidence.</li>
+                <li>Embrace the transformative potential of gym workouts and unlock the remarkable benefits they can
+                  bring
+                  to your life.</li>
+              </ul>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+  <br>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="editing" data-aos="fade-left">
+        <div class="row gx-0">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+            <div class="content">
+              <h1>Advantages of Workout</h1>
+              <ul style="text-align: justify; padding: 20px;">
+                <li>Gym workouts offer a plethora of benefits for both the body and the mind.</li>
+                <li>They enhance strength, endurance, and cardiovascular health through a variety of exercises and
+                  routines, promoting overall
+                  physical fitness.</li>
+                <li>Additionally, gym workouts foster stress reduction and mental well-being by
+                  incorporating mindfulness techniques and focused training, leading to enhanced cognitive function and
+                  emotional resilience.</li>
+                <li>Regular participation in gym workouts can also assist in managing chronic
+                  conditions such as obesity, diabetes, and depression, leading to improved health outcomes.</li>
+                <li>Furthermore, they promote better joint health, muscular balance, and metabolism, contributing to a
+                  more active and vibrant
+                  lifestyle.</li>
+                <li>Embracing gym workouts unveils a pathway to holistic wellness, elevating every facet of one's
+                  well-being.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center">
+            <img src="static/workoutinfo.gif" width="530px" height="580px" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <div class="text-center my-3">
+    <a class="btn btn-outline-secondary" href="/workout">Ready for Exercise</a>
+  </div>
+
+  {% include 'footer_bar.html' %}
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'static/css/particles.json', function () {
+      console.log('particles.json loaded...');
+    });
+  </script>
+
+  <!-- JavaScript to hide loader when content is loaded -->
+  <script>
+    window.addEventListener('load', function () {
+      const loader = document.getElementById('loader');
+      loader.style.display = 'none';
+      const content = document.getElementById('content');
+      content.style.display = 'block';
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+    });
+  </script>
+</body>
+
+</html>
